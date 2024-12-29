@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries with CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: gray;
+            }
+        }
+        @media only screen and (mind-width:300px) and (max-width:500px) {
+            body{
+                background-color: rgb(238, 218, 218);
+            }
+            .container{
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body{
+                background-color: rgb(187, 168, 139);
+            }
+            .container{
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:800px) {
+            body{
+                background-color: cornflowerblue;
+            }
+        }
+        .bdr{
+               border: 2px solid black;
+               padding: 10px 23px;
+               background-color: aquamarine;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Services</span>
+            <span>Contact Us</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Urdu</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright code with moon 2024</footer>
+</body>
+</html>

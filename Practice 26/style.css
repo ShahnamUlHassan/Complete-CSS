@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar-height: 59px
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 50px;
+    width: 40px;
+    margin: 6px 5px;
+}
+
+#navbar ul {
+    font-family: 'Amita';
+    font-size: 22px;
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: dimgrey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    color: darkseagreen;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(90, 40, 40);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(2, 74, 119);
+    background-color: gray;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(https://plus.unsplash.com/premium_photo-1664392115681-28de35ca10a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMGxvZ298ZW58MHx8MHx8fDA%3D) no-repeat top center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+    color: rgb(92, 71, 71);
+    text-align: center;
+    font-size: 34px;
+}
+
+#home p {
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+    color: rgb(100, 10, 10);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid brown;
+    padding: 24px;
+    border-radius: 23px;
+    background-color: aliceblue;
+    margin: 6px;
+}
+
+#services.box img {
+    height: 90px;
+    width: 60px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Sofia';
+    font-size: 22px;
+}
+
+.client-item {
+    padding: 8px;
+}
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(https://media.istockphoto.com/id/1827291486/photo/a-dedicated-mentor-is-explaining-mentees-importance-of-project-while-sitting-at-the-boardroom.webp?b=1&s=612x612&w=0&k=20&c=C4KGssB_GUCjYp_XFzhHJcI1TX35Q6gM9hl0YwfgKWo=);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 124px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://media.istockphoto.com/id/1331252718/photo/blue-phone-icon-or-contact-website-mobile-symbol-isolated-on-classic-communication-telephone.webp?b=1&s=612x612&w=0&k=20&c=vKh7Q9tMiUdheULEGShiOLDG3ys-neWs8IoNbjp_2e0=) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box form{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+.h-primary {
+    font-family: 'Sofia';
+    font-size: 22px;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-seconday {
+    font-family: 'Sofia';
+    font-size: 22px;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 3px solid gray;
+    background-color: rgb(21, 21, 71);
+    color: rgb(244, 246, 248);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

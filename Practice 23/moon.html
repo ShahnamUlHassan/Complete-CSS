@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations & Keyframes</title>
+</head>
+<style>
+.container{
+    background-color:gainsboro;
+}
+.box{
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+    position:relative;
+    /* animation-name: moon1; */
+    animation-name: moon2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode:alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-direction: alternate-reverse;
+}
+@keyframes moon2{
+0%{
+top: 0px;
+left: 0px;
+}
+25%{
+top: 250px;
+left: 0px;
+}
+75%{
+top: 250px;
+left: 250px;
+}
+100%{
+top: 0px;
+left: 250px;
+}
+}
+@keyframes moon1{
+    from{
+width: 200px;
+    }
+    to{
+width: 900px;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>
